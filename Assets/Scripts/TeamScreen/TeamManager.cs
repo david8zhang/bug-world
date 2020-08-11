@@ -11,7 +11,6 @@ public class TeamManager : MonoBehaviour
     private void Awake()
     {
         bugTeam = JsonUtility.FromJson<Team>(playerTeamData.text);
-        Debug.Log(bugTeam.team);
     }
 
     private void Start()
