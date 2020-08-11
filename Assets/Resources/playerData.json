@@ -1,0 +1,12 @@
+﻿{
+    "team": [ {
+        "bugName": "Ant",
+        "attack": 50,
+        "defense": 50,
+        "speed": 50,
+        "health":  100,
+        "experience": 0,
+        "level": 1,
+        "type":  "ant"
+     } ]
+}

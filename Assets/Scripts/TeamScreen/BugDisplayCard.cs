@@ -4,19 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class BugDisplay : MonoBehaviour
+public class BugDisplayCard : MonoBehaviour
 {
-
-    public Bug bug;
     public TextMeshProUGUI bugNameText;
     public TextMeshProUGUI levelText;
     public Image image;
+    public BugSprites bugSprites;
 
-    // Start is called before the first frame update
-    void Start()
+    public void Create(Bug bug)
     {
         bugNameText.text = bug.bugName;
-        levelText.text = "Lv. 1";
-        image.sprite = bug.image;
+        levelText.text = "Lv. " + bug.level.ToString();
+        image.sprite = bugSprites.GetSprite(bug.type);
     }
 }
